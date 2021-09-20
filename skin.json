@@ -17,6 +17,9 @@
   },
   "license-name": "GPL-3.0-or-later",
   "manifest_version": 2,
+  "AutoloadNamespaces": {
+    "Lakeus\\": "includes/"
+  },
   "ValidSkinNames": {
     "lakeus": {
       "class": "SkinLakeus",
@@ -88,6 +91,19 @@
       "packageFiles": [
         "resources/skin.js"
       ]
+    },
+    "skins.lakeus.search": {
+      "dependencies": ["mediawiki.Uri", "wvui"],
+      "es6": true,
+      "packageFiles": [
+        "resources/skins.lakeus.search/skins.lakeus.search.js",
+        "resources/skins.lakeus.search/App.vue",
+        {
+          "name": "resources/skins.lakeus.search/config.json",
+          "callback": "Lakeus\\Hooks::getLakeusWvuiSearchResourceLoaderConfig"
+        }
+      ],
+      "messages": ["searchbutton", "searchresults", "searchsuggest-containing"]
     }
   },
   "ResourceModuleSkinStyles": {
