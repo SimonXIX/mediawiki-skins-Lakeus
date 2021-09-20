@@ -10,7 +10,7 @@ class Hooks {
 	 * @param Config $config
 	 * @return $wgLakeusWvuiSearchOptions
 	 */
-	public static function getSnapwikiskinWvuiSearchResourceLoaderConfig(
+	public static function getLakeusWvuiSearchResourceLoaderConfig(
 		ResourceLoaderContext $context,
 		Config $config
 	) {
