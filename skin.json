@@ -39,7 +39,8 @@
             "skins.lakeus.styles"
           ],
           "scripts": [
-            "skins.lakeus"
+            "skins.lakeus",
+            "skins.lakeus.search"
           ],
           "responsive": true
         }
@@ -103,6 +104,12 @@
     "LakeusShowRepositoryLink": {
       "value": true,
       "description": "Whether to show the link to the repository or not."
+    },
+    "LakeusWvuiSearchOptions": {
+      "value": {
+        "showThumbnail": true,
+        "showDescription": true
+      }
     }
   }
 }
