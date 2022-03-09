@@ -1,5 +1,10 @@
 <header class="mw-header">
 	{{>Logo}}
+	<div id="links">
+		<a href="/" style="margin-left:1em">Books</a>
+		<a href="/blog" style="margin-left:1em">Blog</a>
+		<a href="/about.html" style="margin-left:1em">About</a>
+	</div>
 	<div id="p-user-tools">
         {{>Notifications}}
 		{{#data-portlets.data-user-interface-preferences}}{{>Portlet}}{{/data-portlets.data-user-interface-preferences}}
@@ -11,13 +16,13 @@
 {{>Notices}}
 <main id="content" class="mw-body">
 	<header class="content__header">
+                <div class="content-header-tabs">
+                        {{>ContentNamespaces}}
+                        {{>ContentActions}}
+                </div>
 		{{>ContentIndicators}}
 		{{>ContentHeading}}
 		{{>ContentTagline}}
-		<div class="content-header-tabs">
-			{{>ContentNamespaces}}
-			{{>ContentActions}}
-		</div>
 	</header>
 	{{>ContentBody}}
 </main>
